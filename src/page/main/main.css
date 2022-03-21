@@ -1,0 +1,21 @@
+.main {
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: baseline;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,14 @@
+.titulo_description {
+    margin: 0 auto;
+    padding: 0 0 12px 0;
+}
+
+.lista_description {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.item_description {
+    margin-left: 0rem;
+}

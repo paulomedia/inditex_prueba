@@ -1,0 +1,21 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: LightBlue;
+   border: 1px solid SteelBlue;
+   padding: 1rem;
+   margin: 0 0 0.5rem 0;
+}
+
+.titulo {
+   font-size: 1.5rem;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .nav {
+   display: none;
+   padding: 0px;
+   margin: 0px;
+ }
