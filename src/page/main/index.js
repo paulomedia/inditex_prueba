@@ -1,57 +1,60 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Item from '../../components/item';
-import Search from '../../components/search';
-import { getAll } from '../../services';
-import { ProductContext } from '../../context/context';
-import './main.css';
+import React, { useState } from "react";
+import { useQuery } from "react-query";
+import { getProducts } from "../../services";
+import config from "../../config";
+import Items from "../../components/items";
+import Search from "../../components/search";
+import Message from "../../components/message";
+import "./main.css";
 
-function Main() {
-  const [items, setItems] = useState([]);
-  const [message, setMessage] = useState('');
-  const {products, setProducts} = useContext(ProductContext);
+const Main = () => {
+  const [searchedItems, setSearchedItems] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
 
-  useEffect(() => {
-     getAll()
-      .then(data => {
-        setItems(data);
-        setProducts(data);
-      }, () => setMessage('No ha sido posible presentar los datos, intente otra vez'))
-  }, []);
+  const {
+    data: products,
+    error,
+    status,
+  } = useQuery(["products"], getProducts, config.products);
 
-  const handleSearch = search => {
-    let exp = new RegExp(search, 'i');
-    let aux = [];
-
-    for (let i = 0; i<products.length; ++i) {
-      if (exp.test(products[i].brand) || exp.test(products[i].model)) {
-        aux.push(products[i]);
-      }
+  /*
+  const queryCache = new QueryCache({
+    onError: error => {
+      console.log(error)
+    },
+    onSuccess: data => {
+      console.log(data)
     }
-    setItems(aux);
+  })
+  const query = queryCache.find('products')
+  console.log('Query --> ' ,query)
+  */
+
+  if (status !== "success") {
+    return <Message status={status} error={error} />;
   }
 
+  const handleSearch = (search) => {
+    const regExp = new RegExp(search, "i");
+    const searched = products.filter(
+      ({ brand, model }) => regExp.test(brand) || regExp.test(model)
+    );
+
+    setIsSearching(true);
+    setSearchedItems(searched);
+  };
+
   return (
-    <main className='main'>
-      <div className='main_header'>
+    <main className="main">
+      <div className="main_header">
         <span>Productos</span>
-        <Search 
-          handleSearch={ handleSearch }
-        />
+        <Search handleSearch={handleSearch} />
       </div>
-      <article className='article'>
-        <p>{ message }</p>
-        <ul className='list'>
-           { items ? items.map(product => (
-             <Item 
-               data={ product }
-               key={`product_${product.id}`}
-             />
-           )) : <p>Cargando resultados...</p>
-           }
-        </ul>
+      <article className="article">
+        <Items data={isSearching ? searchedItems : products} />
       </article>
     </main>
   );
-}
-  
+};
+
 export default Main;

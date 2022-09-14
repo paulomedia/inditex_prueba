@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { getString } from '../../helpers';
-import './description.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { getString } from '../../helpers'
+import './description.css'
 
 const Description = ({ 
     data: { id, brand, model, price, cpu, ram, os, displayResolution, battery, primaryCamera, secondaryCmera, dimentions, weight }
@@ -20,20 +20,18 @@ const Description = ({
     getString(secondaryCmera),
     dimentions,
     weight
-  ];
+  ]
 
   return (
     <>
       <h3 className='titulo_description'>Caracteristicas</h3>
       <ul className='lista_description'>
         {
-          list.map((item, i) => {
-            return <li key={`ìtem${i}_${id}`} className='item_description'>{item}</li>
-          })
+          list.map((item, i) => <li className='item_description' key={ `ìtem${i}_${id}` }>{ item }</li>)
         }
       </ul>
     </>
-  );
+  )
 }
 
 Description.propTypes = {
@@ -69,4 +67,4 @@ Description.defaultProps = {
   data: undefined
 }
   
-export default Description;
+export default Description

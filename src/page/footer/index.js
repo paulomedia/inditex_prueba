@@ -1,8 +1,8 @@
-import React from 'react';
-import './footer.css';
+import React from 'react'
+import './footer.css'
 
 const Footer = () => {
-  const enlaces = ['Condiciones de uso', 'Politica de privacidad', 'Politica de Cookies'];
+  const enlaces = ['Condiciones de uso', 'Politica de privacidad', 'Politica de Cookies']
 
   return (
     <footer className='footer'>
@@ -19,7 +19,7 @@ const Footer = () => {
         </ul>  
       </div>  
     </footer>
-  );
+  )
 }
   
-export default Footer;
+export default Footer

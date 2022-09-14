@@ -1,0 +1,864 @@
+[
+    {
+        "jornada": 1,
+        "fechas": [
+            {
+                "data": "19_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            },
+            {
+                "data": "20_09_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 4
+            },
+            {
+                "data": "21_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "30_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            }
+        ]
+    },
+    {
+        "jornada": 2,
+        "fechas": [
+            {
+                "data": "26_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 4
+            },
+            {
+                "data": "27_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "28_09_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 3,
+        "fechas": [
+            {
+                "data": "02_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "03_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            },
+            {
+                "data": "04_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "04_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "07_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 4,
+        "fechas": [
+            {
+                "data": "17_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 4
+            },
+            {
+                "data": "18_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "19_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 5,
+        "fechas": [
+            {
+                "data": "23_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "24_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "25_10_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 5
+            },
+            {
+                "data": "26_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 6,
+        "fechas": [
+            {
+                "data": "31_10_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "01_11_20",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 6
+            },
+            {
+                "data": "02_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 7,
+        "fechas": [
+            {
+                "data": "06_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            },
+            {
+                "data": "07_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "08_11_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 6
+            }
+        ]
+    },
+    {
+        "jornada": 8,
+        "fechas": [
+            {
+                "data": "21_11_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 3
+            },
+            {
+                "data": "22_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 7
+            }
+        ]
+    },
+    {
+        "jornada": 9,
+        "fechas": [
+            {
+                "data": "28_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "29_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "30_11_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            }
+        ]
+    },
+    {
+        "jornada": 10,
+        "fechas": [
+            {
+                "data": "05_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "06_12_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 5
+            },
+            {
+                "data": "07_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "20_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 11,
+        "fechas": [
+            {
+                "data": "11_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            },
+            {
+                "data": "12_12_20",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "13_12_20",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 6
+            }
+        ]
+    },
+    {
+        "jornada": 12,
+        "fechas": [
+            {
+                "data": "15_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 2
+            },
+            {
+                "data": "16_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 7
+            },
+            {
+                "data": "17_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 13,
+        "fechas": [
+            {
+                "data": "19_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "20_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 7
+            }
+        ]
+    },
+    {
+        "jornada": 14,
+        "fechas": [
+            {
+                "data": "22_12_20",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            },
+            {
+                "data": "23_12_20",
+                "cartoes5m": 2,
+                "cartoes10m": 3,
+                "jogos": 8
+            }
+        ]
+    },
+    {
+        "jornada": 15,
+        "fechas": [
+            {
+                "data": "03_01_21",
+                "cartoes5m": 1,
+                "cartoes10m": 5,
+                "jogos": 10
+            }
+        ]
+    },
+    {
+        "jornada": 16,
+        "fechas": [
+            {
+                "data": "06_01_21",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 10
+            }
+        ]
+    },
+    {
+        "jornada": 17,
+        "fechas": [
+            {
+                "data": "09_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "10_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 6
+            },
+            {
+                "data": "11_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 18,
+        "fechas": [
+            {
+                "data": "15_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "16_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "17_01_21",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 5
+            },
+            {
+                "data": "18_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 19,
+        "fechas": [
+            {
+                "data": "22_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "23_01_21",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 4
+            },
+            {
+                "data": "24_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            }
+        ]
+    },
+    {
+        "jornada": 20,
+        "fechas": [
+            {
+                "data": "29_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "30_01_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "31_01_21",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 6
+            }
+        ]
+    },
+    {
+        "jornada": 21,
+        "fechas": [
+            {
+                "data": "05_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "06_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 4
+            },
+            {
+                "data": "07_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 5
+            }
+        ]
+    },
+    {
+        "jornada": 22,
+        "fechas": [
+            {
+                "data": "12_02_21",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 1
+            },
+            {
+                "data": "13_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "14_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 5
+            },
+            {
+                "data": "15_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 23,
+        "fechas": [
+            {
+                "data": "19_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            },
+            {
+                "data": "20_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "21_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 2,
+                "jogos": 4
+            },
+            {
+                "data": "22_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 24,
+        "fechas": [
+            {
+                "data": "27_02_21",
+                "cartoes5m": 0,
+                "cartoes10m": 2,
+                "jogos": 3
+            },
+            {
+                "data": "28_02_21",
+                "cartoes5m": 1,
+                "cartoes10m": 3,
+                "jogos": 6
+            },
+            {
+                "data": "17_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 25,
+        "fechas": [
+            {
+                "data": "02_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            },
+            {
+                "data": "03_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 7
+            },
+            {
+                "data": "04_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "18_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 26,
+        "fechas": [
+            {
+                "data": "06_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "07_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 6
+            },
+            {
+                "data": "08_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 27,
+        "fechas": [
+            {
+                "data": "12_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 2
+            },
+            {
+                "data": "13_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "14_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            }
+        ]
+    },
+    {
+        "jornada": 28,
+        "fechas": [
+            {
+                "data": "19_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "20_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            },
+            {
+                "data": "21_03_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 6
+            },
+            {
+                "data": "07_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 29,
+        "fechas": [
+            {
+                "data": "03_04_21",
+                "cartoes5m": 2,
+                "cartoes10m": 3,
+                "jogos": 10
+            }
+        ]
+    },
+    {
+        "jornada": 30,
+        "fechas": [
+            {
+                "data": "10_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "11_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 6
+            },
+            {
+                "data": "12_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 31,
+        "fechas": [
+            {
+                "data": "17_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 4
+            },
+            {
+                "data": "18_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 6
+            }
+        ]
+    },
+    {
+        "jornada": 32,
+        "fechas": [
+            {
+                "data": "20_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "21_04_21",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 7
+            },
+            {
+                "data": "22_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 2
+            }
+        ]
+    },
+    {
+        "jornada": 33,
+        "fechas": [
+            {
+                "data": "24_04_21",
+                "cartoes5m": 1,
+                "cartoes10m": 1,
+                "jogos": 3
+            },
+            {
+                "data": "25_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "26_04_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 2
+            }
+        ]
+    },
+    {
+        "jornada": 34,
+        "fechas": [
+            {
+                "data": "01_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "02_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 6
+            },
+            {
+                "data": "03_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 35,
+        "fechas": [
+            {
+                "data": "08_05_21",
+                "cartoes5m": 1,
+                "cartoes10m": 2,
+                "jogos": 4
+            },
+            {
+                "data": "09_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 1,
+                "jogos": 6
+            }
+        ]
+    },
+    {
+        "jornada": 36,
+        "fechas": [
+            {
+                "data": "11_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            },
+            {
+                "data": "12_05_21",
+                "cartoes5m": 1,
+                "cartoes10m": 3,
+                "jogos": 8
+            },
+            {
+                "data": "13_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 37,
+        "fechas": [
+            {
+                "data": "15_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 4
+            },
+            {
+                "data": "16_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 5
+            },
+            {
+                "data": "17_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 1
+            }
+        ]
+    },
+    {
+        "jornada": 38,
+        "fechas": [
+            {
+                "data": "22_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 3
+            },
+            {
+                "data": "23_05_21",
+                "cartoes5m": 0,
+                "cartoes10m": 0,
+                "jogos": 7
+            }
+        ]
+    }
+]

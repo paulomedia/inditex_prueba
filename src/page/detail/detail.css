@@ -21,7 +21,7 @@
   height: 80%;
 }
 
-.caracteristicas {
+.others {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

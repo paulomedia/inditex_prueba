@@ -1,10 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/breadcrumbs';
-import './header.css';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Breadcrumb from '../../components/breadcrumbs'
+import './header.css'
 
 const Header = () => {
-
   return (
     <header className='header'>
       <nav>
@@ -17,7 +16,7 @@ const Header = () => {
         <span>0 items</span>
       </div>
     </header>
-  );
+  )
 }
   
-export default Header;
+export default Header

@@ -9,13 +9,3 @@
   align-content: stretch;
   align-items: baseline;
 }
-
-.list {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    flex-wrap: wrap;  
-    justify-content: space-around;
-    padding: 0px;
-    margin: 0px;
-}

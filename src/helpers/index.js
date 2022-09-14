@@ -1,10 +1,8 @@
 export const getString = value => {
-    if(!Array.isArray(value)) return value;
+  if (!Array.isArray(value)) return value
      
-    let finalWord = '';
-    for(let i = 0; i<value.length; ++i) {
-      finalWord += value[i]+' - ';
-    }
+  let finalWord = ''
+  value.map(part => finalWord = finalWord.concat(`${part} - `))
     
-    return finalWord.substr(0, finalWord.length - 3);
+  return finalWord.substr(0, finalWord.length - 3)
 }
