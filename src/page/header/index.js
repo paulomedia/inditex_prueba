@@ -1,22 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Breadcrumb from '../../components/breadcrumbs'
-import './header.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import DefaultBreadcrumbs from "../../components/defaultbreadcrumbs";
+import Cart from "../../components/cart";
+import "./header.css";
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className="header">
       <nav>
         <Link to="/">Home</Link>
       </nav>
+      <DefaultBreadcrumbs />
       <div>
-        <Breadcrumb />
-      </div>
-      <div>
-        <span>0 items</span>
+        <Cart />
       </div>
     </header>
-  )
-}
-  
-export default Header
+  );
+};
+
+export default Header;

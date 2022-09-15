@@ -1,8 +1,0 @@
-.breadcrumbs {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: auto;
-    list-style: none;
-}

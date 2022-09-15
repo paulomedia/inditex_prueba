@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { getProducts } from "../../services";
 import config from "../../config";
 import Items from "../../components/items";
-import Search from "../../components/search";
+// import Search from "../../components/search";
 import Message from "../../components/message";
 import "./main.css";
 
@@ -16,19 +16,6 @@ const Main = () => {
     error,
     status,
   } = useQuery(["products"], getProducts, config.products);
-
-  /*
-  const queryCache = new QueryCache({
-    onError: error => {
-      console.log(error)
-    },
-    onSuccess: data => {
-      console.log(data)
-    }
-  })
-  const query = queryCache.find('products')
-  console.log('Query --> ' ,query)
-  */
 
   if (status !== "success") {
     return <Message status={status} error={error} />;
@@ -48,7 +35,13 @@ const Main = () => {
     <main className="main">
       <div className="main_header">
         <span>Productos</span>
+        <input
+          placeholder="Buscar producto"
+          onChange={(e) => handleSearch(e.target.value)}
+        />
+        {/*
         <Search handleSearch={handleSearch} />
+        */}
       </div>
       <article className="article">
         <Items data={isSearching ? searchedItems : products} />

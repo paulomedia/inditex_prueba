@@ -13,27 +13,6 @@ export const getProduct = async (id) => {
 
 export const addToCart = async (dataToSend) => {
   console.log("addToCart dataToSend  ---> ", dataToSend);
-  const __data = {
-    id: 1,
-    colorCode: 1,
-    storageCode: 2,
-  };
-  // const body = JSON.stringify(data)
-  // console.log('addToCart json  ---> ', JSON.stringify(data) )
-
-  const { data } = await axios.post(`${BASE_URL}api/cart/`, {
-    body: JSON.stringify(__data),
-  });
+  const { data } = await axios.post(`${BASE_URL}api/cart/`, dataToSend);
   return data;
-
-  /*
-  return new Promise((resolve, reject) => {
-    fetch(`${BASE_URL}api/cart/`, {
-      method: "POST",
-      body: JSON.stringify(dataToSend),
-    })
-      .then((response) => resolve(response.json()))
-      .catch((error) => reject(error));
-  });
-  */
 };

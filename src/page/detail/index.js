@@ -16,10 +16,7 @@ const Detail = () => {
     data: product,
     error,
     status,
-  } = useQuery(["product", id], () => getProduct(id), {
-    refetchOnWindowFocus: false,
-    refetchOnMount: false,
-  });
+  } = useQuery(["product", id], () => getProduct(id));
 
   if (status !== "success") {
     return <Message status={status} error={error} />;
