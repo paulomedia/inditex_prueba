@@ -26,6 +26,7 @@ const Actions = ({ data: { id, options } }) => {
     console.log("HandleClick add to id      --> ", id);
     console.log("HandleClick add to color   --> ", color);
     console.log("HandleClick add to storage --> ", storage);
+
     const dataTosend = {
       id,
       colorCode: 1000,
