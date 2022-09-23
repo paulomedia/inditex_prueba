@@ -6,17 +6,17 @@ import Actions from "../../components/actions";
 import Description from "../../components/description";
 import Message from "../../components/message";
 import Image from "../../components/image";
+import config from "../../config";
 import "./detail.css";
 
 const Detail = () => {
   const [searchParams] = useSearchParams("");
   const id = searchParams.get("id");
-
   const {
     data: product,
     error,
     status,
-  } = useQuery(["product", id], () => getProduct(id));
+  } = useQuery(["product", id], () => getProduct(id), config.products);
 
   if (status !== "success") {
     return <Message status={status} error={error} />;
@@ -24,15 +24,19 @@ const Detail = () => {
 
   return (
     <main className="detail">
-      <article className="article">
-        <div className="image">
-          <Image imgUrl={product.imgUrl} />
-        </div>
-        <div className="others">
-          <div>{product && <Description data={product} />}</div>
-          <div className="actions">{product && <Actions data={product} />}</div>
-        </div>
-      </article>
+      {product && (
+        <article className="article">
+          <div className="image">
+            <Image imgUrl={product.imgUrl} />
+          </div>
+          <div className="others">
+            <div>{product && <Description data={product} />}</div>
+            <div className="actions">
+              {product && <Actions data={product} />}
+            </div>
+          </div>
+        </article>
+      )}
     </main>
   );
 };

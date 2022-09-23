@@ -1,16 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DefaultBreadcrumbs from "../../components/defaultbreadcrumbs";
+import InditexBreadcrumbs from "../../components/inditexbreadcrumbs";
 import Cart from "../../components/cart";
+import HomeIcon from "@mui/icons-material/Home";
 import "./header.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header_wrapper">
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/">
+          <HomeIcon />
+        </Link>
       </nav>
-      <DefaultBreadcrumbs />
+      <InditexBreadcrumbs />
       <div>
         <Cart />
       </div>

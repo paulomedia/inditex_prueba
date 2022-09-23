@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, { useCallback } from "react";
 import PropTypes from "prop-types";
+import { TextField } from "@mui/material";
 import "./search.css";
 
-const Search = ({ handleSearch }) => {
-  const [inputs, setInputs] = useState("");
+const SEARCH_PRODUCT = "Buscar producto";
 
-  const handleChange = ({ target: { value } }) => {
-    setInputs(value);
-    handleSearch(value);
-  };
+const Search = ({ handleSearch }) => {
+  const handleChange = useCallback(
+    ({ target: { value } }) => {
+      handleSearch(value);
+    },
+    [handleSearch]
+  );
 
   return (
-    <div className="search">
-      <input
-        className="input"
-        type="text"
-        name="search"
-        value={inputs || ""}
-        onChange={handleChange}
-        placeholder="Search"
-      />
-    </div>
+    <TextField
+      className="search_input"
+      id="outlined-basic"
+      onChange={handleChange}
+      label={SEARCH_PRODUCT}
+      variant="outlined"
+    />
   );
 };
 

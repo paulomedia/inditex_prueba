@@ -4,20 +4,15 @@ import { Link } from "react-router-dom";
 import "./item.css";
 
 const Item = ({ data: { brand, id, imgUrl, model, price } }) => {
-  const product = [brand, model, `${price || "Na"} €`];
-
   return (
     <Link className="link" to={`detalle?id=${id}`}>
-      <li className="item">
-        <img className="img" src={imgUrl}></img>
-        <ul className="list-item">
-          {product.map((item, i) => (
-            <li key={`item${i}_`}>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </li>
+      <div className="item_wrapper">
+        <img className="item_img" src={imgUrl}></img>
+        <h3 className="item_brand">{`${brand} ${model}`}</h3>
+        <div className="item_price">
+          <h4>{`${price || "Na"} €`}</h4>
+        </div>
+      </div>
     </Link>
   );
 };

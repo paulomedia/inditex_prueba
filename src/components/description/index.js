@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { getString } from "../../helpers";
+import { transformString } from "../../helpers";
 import "./description.css";
+
+const FEATURES = "Caracteristicas";
 
 const Description = ({
   data: {
@@ -24,20 +26,20 @@ const Description = ({
     brand,
     model,
     `${price || "Na"} €`,
-    getString(cpu),
+    transformString(cpu),
     ram,
-    getString(os),
+    transformString(os),
     displayResolution,
     battery,
-    getString(primaryCamera),
-    getString(secondaryCmera),
+    transformString(primaryCamera),
+    transformString(secondaryCmera),
     dimentions,
     weight,
   ];
 
   return (
     <>
-      <h3 className="titulo_description">Caracteristicas</h3>
+      <h3 className="titulo_description">{FEATURES}</h3>
       <ul className="lista_description">
         {list.map((item, i) => (
           <li className="item_description" key={`ìtem${i}_${id}`}>

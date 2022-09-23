@@ -1,66 +1,64 @@
-import React, { useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { addToCart } from "../../services";
-import Button from "../button";
-import Selector from "../selector";
+import { Button } from "@mui/material";
+import { CartContext } from "../../context/context";
+import Selectors from "../../components/selectors";
 import "./actions.css";
 
+const ACTIONS = "Acciones";
+const ADD_TO_CART = "Añadir al carrito";
+const nameProps = {
+  COLOR: "color",
+  STORAGE: "storage",
+};
+
 const Actions = ({ data: { id, options } }) => {
-  const [color, setColor] = useState("");
-  const [storage, setStorage] = useState("");
+  const [color, setColor] = useState();
+  const [storage, setStorage] = useState();
+  const { countProducts, setProducts } = useContext(CartContext);
 
-  const handleChange = ({ target: { name, value } }) => {
-    console.log("HandleChange add to cart");
-    switch (name) {
-      case "color":
-        setColor(value);
-        break;
-
-      case "storage":
-        setStorage(value);
-        break;
+  useEffect(() => {
+    if (!color || !storage) {
+      setColor(options.colors[0].code);
+      setStorage(options.storages[0].code);
     }
-  };
+  }, [options]);
 
-  const handleClick = () => {
-    console.log("HandleClick add to id      --> ", id);
-    console.log("HandleClick add to color   --> ", color);
-    console.log("HandleClick add to storage --> ", storage);
-
-    const dataTosend = {
-      id,
-      colorCode: 1000,
-      storageCode: 2000,
+  const handleChange = useCallback(({ target: { name, value } }) => {
+    const nameChangeMapping = {
+      [nameProps.COLOR]: setColor,
+      [nameProps.STORAGE]: setStorage,
     };
 
-    addToCart(dataTosend).then(
-      (response) => {
-        console.log("addToCart response  ---> ", response);
-        // TODO actualizar el numero de elementos en el cart con response.count
-        // La peticón devuelve siempre un 400 deberiamos recebir { count: x }
+    nameChangeMapping[name](value);
+  }, []);
+
+  const handleClick = useCallback(() => {
+    addToCart({
+      id,
+      colorCode: color,
+      storageCode: storage,
+    }).then(
+      () => {
+        setProducts(countProducts + 1);
       },
-      (error) => {
-        console.log("addToCart error  ---> ", error);
-      }
+      () => {}
     );
-  };
+  }, [color, storage]);
 
   return (
     <>
-      <h3>Acciones</h3>
-      <Selector
-        description={"Selecione el almacenaimento:"}
+      <h3>{ACTIONS}</h3>
+      <Selectors
+        color={color}
+        storage={storage}
         handleChange={handleChange}
-        name={"storage"}
-        options={options && options.storages}
+        options={options}
       />
-      <Selector
-        description={"Selecione el color:"}
-        handleChange={handleChange}
-        name={"color"}
-        options={options && options.colors}
-      />
-      <Button handleClick={handleClick} />
+      <Button variant="contained" onClick={handleClick} className="add_cart">
+        {ADD_TO_CART}
+      </Button>
     </>
   );
 };

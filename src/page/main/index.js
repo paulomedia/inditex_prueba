@@ -4,16 +4,18 @@ import { getProducts } from "../../services";
 import config from "../../config";
 import Items from "../../components/items";
 import Message from "../../components/message";
+import { useDebounce } from "../../hooks/useDebounce";
+import { Typography } from "@mui/material";
+import Search from "../../components/search";
 import "./main.css";
-import { useDebounce } from "../../app/hooks";
 
 const DELAY_SEARCH = 500;
+const TITLE = "Productos";
 
 const Main = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchedItems, setSearchedItems] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
-
   const debouncedSearchTerm = useDebounce(searchTerm, DELAY_SEARCH);
 
   const {
@@ -44,11 +46,10 @@ const Main = () => {
   return (
     <main className="main">
       <div className="main_header">
-        <span>Productos</span>
-        <input
-          placeholder="Buscar producto"
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <Typography color="text.primary" variant="h4">
+          {TITLE}
+        </Typography>
+        <Search handleSearch={setSearchTerm} />
       </div>
       <article className="article">
         <Items data={isSearching ? searchedItems : products} />
