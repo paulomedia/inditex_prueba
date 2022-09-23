@@ -2,3 +2,7 @@
   margin-left: 0;
   margin-right: 5px;
 }
+
+.breadcrumbs_nolink {
+  margin: 0;
+}

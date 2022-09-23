@@ -16,7 +16,7 @@ const InditexBreadcrumbs = () => {
   return (
     <Breadcrumbs aria-label="breadcrumb" className="breadcrumbs">
       <Link to="/">{pageType.HOME}</Link>
-      {isDetail && <Link to="/">{pageType.DETAIL}</Link>}
+      {isDetail && <p className="breadcrumbs_nolink">{pageType.DETAIL}</p>}
     </Breadcrumbs>
   );
 };
